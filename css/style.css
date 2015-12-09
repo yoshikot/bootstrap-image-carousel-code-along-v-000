@@ -10,3 +10,41 @@ img, video, audio, iframe, table, form {
 .row {
   margin-bottom: 20px;
 }
+
+/*/////// CAROUSEL STYLES ////////*/
+
+#carousel-example-generic .item img {
+  height: auto;
+}
+
+.carousel-caption p {
+  display: none;
+}
+
+/*small-sized devices used in bootstrap*/
+@media only screen and (min-width: 768px) {
+  
+  #carousel-example-generic .item img {
+    height: 384px;
+  }
+}
+
+/*medium-sized devices used in bootstrap*/
+@media only screen and (min-width: 992px) {
+  
+  #carousel-example-generic .item img {
+    height: 496px;
+  }
+
+  .carousel-caption p {
+    display: block;
+  }
+}
+
+/*large-sized devices used in bootstrap*/
+@media only screen and (min-width: 1200px) {
+    
+    #carousel-example-generic .item img {
+      height: 600px;
+    }
+}
